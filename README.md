@@ -1,4 +1,4 @@
-# 🛡️ ScamRadar — Hackathon Blueprint & Project Planner
+# 🛡️ ScamRadar — 
 
 **ScamRadar** is a unified cyber-defense platform powered by server-side integration of Advanced GenAI to detect scam messages, phishing URLs, and screenshot alerts in real-time. 
 
@@ -71,7 +71,7 @@ A secondary Python microservice ([main.py](file:///c:/Users/dhana/Desktop/Deeksh
 
 A parallel 8-hour strategy divides modular responsibilities to ensure independent progression:
 
-*   **Person 1 (Backend Dev):** Setup of the backend, Message Analysis API ([detector.py](file:///c:/Users/dhana/Desktop/Deeksh/ScamRadar/detector.py)), risk scoring algorithms, and keyword rule index database mapping.
-*   **Person 2 (OCR & URL Specialist):** Phishing URL reputation scanning, IP & Shortlink tracking filters, Pillow-based image OCR parsing, and visual marker analyses.
-*   **Person 3 (Frontend Developer):** Interface development of the React SPA dashboard, tab navigation, state management, form validation, and real-time API integrations.
-*   **Person 4 (Deployment & Lead):** Devops pipelines (Vercel/Render), automated webhook workflows (n8n), pitch deck, and mock judging presentations.
+*   **Deekshitha (Backend Dev):** Setup of the backend, Message Analysis API ([detector.py], risk scoring algorithms, and keyword rule index database mapping.
+*   **Karthikeya (OCR & URL Specialist):** Phishing URL reputation scanning, IP & Shortlink tracking filters, Pillow-based image OCR parsing, and visual marker analyses.
+*   **Ananya (Frontend Developer):** Interface development of the React SPA dashboard, tab navigation, state management, form validation, and real-time API integrations.
+*   **Afifa (Deployment & Lead):** Devops pipelines (Vercel/Render), automated webhook workflows (n8n), pitch deck, and mock judging presentations.
