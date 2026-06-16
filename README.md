@@ -1,77 +1,174 @@
-# 🛡️ ScamRadar — 
+# 🛡️ ScamRadar — AI-Powered Scam & Phishing Detection Platform
 
-**ScamRadar** is a unified cyber-defense platform powered by server-side integration of Advanced GenAI to detect scam messages, phishing URLs, and screenshot alerts in real-time. 
+## Protect Before You Click
 
----
+ScamRadar is an intelligent cyber-safety platform that helps users identify scams before they become victims.
 
-## 🚀 Getting Started (How to Run)
+Whether it's a suspicious WhatsApp message, a phishing URL, or a screenshot of a potentially fraudulent offer, ScamRadar analyzes the content in real time and provides an easy-to-understand risk assessment with clear explanations.
 
-The primary application is a unified **Node.js/Express server** that hosts the React frontend (via Vite dev server middleware) and handles GenAI backend APIs.
+### The Problem
 
-### 1. Unified Web App (React + Node/Express)
+Digital scams are growing rapidly through:
 
-1. **Install Dependencies:**
-   ```bash
-   npm install
-   ```
+* Phishing links
+* Fake job offers
+* OTP and banking fraud
+* Lottery and reward scams
+* Social engineering attacks
+* Fraudulent emails and messages
 
-2. **Configure Environment Variables:**
-   Create a `.env` file in the root folder (using [.env.example](file:///c:/Users/dhana/Desktop/Deeksh/ScamRadar/.env.example) as a reference) and insert your Gemini API key:
-   ```env
-   GEMINI_API_KEY="your_actual_gemini_api_key_here"
-   ```
-   *Note: If no valid key is provided, ScamRadar will automatically fall back to local offline heuristic engines for message/URL scanning and simulated visual scans.*
+Most users know something feels suspicious but don't know how to verify it.
 
-3. **Start the Development Server:**
-   ```bash
-   npm run dev
-   ```
-   Open your browser and navigate to **`http://localhost:3000`**.
+### Our Solution
 
-4. **Build and Run for Production:**
-   ```bash
-   npm run build
-   npm run start
-   ```
+ScamRadar acts as a personal scam investigator.
 
----
+Users can:
 
-### 2. Optional Python Microservice (FastAPI + OCR)
+✅ Analyze suspicious messages
 
-A secondary Python microservice ([main.py](file:///c:/Users/dhana/Desktop/Deeksh/ScamRadar/main.py)) is included to serve as an alternative OCR scanner using EasyOCR and Pillow.
+✅ Scan phishing URLs
 
-1. **Set Up a Virtual Environment & Install Packages:**
-   ```bash
-   python -m venv venv
-   venv\Scripts\activate
-   pip install fastapi uvicorn pydantic pillow easyocr
-   ```
+✅ Upload screenshots for OCR-based analysis
 
-2. **Run the FastAPI server:**
-   ```bash
-   uvicorn main:app --reload
-   ```
-   Access the interactive docs at **`http://localhost:8000/docs`**.
+✅ Receive a risk score instantly
+
+✅ Understand why content was flagged
+
+✅ Trigger automated alerts for high-risk threats
 
 ---
 
-## 🛠️ Tech Stack & Frameworks
+## Key Features
 
-*   **Frontend Core:** React 19 + TypeScript bundled with **Vite 6**.
-*   **Styling Paradigm:** Utility-first styling via **Tailwind CSS 4**.
-*   **Animations:** Smooth layout transitions using **motion/react**.
-*   **Iconography:** Rendered via **Lucide-React**.
-*   **Backend Server:** Node.js + **Express** using **tsx** (TypeScript runner) and **esbuild** (production compiler).
-*   **Generative AI:** Server-side endpoints powered by the official **@google/genai** SDK querying `gemini-3.5-flash` with structured JSON schema outputs.
-*   **Auxiliary Backend:** Python **FastAPI** + **EasyOCR** for modular text extraction from image attachments.
+### 📩 Message Analysis
+
+Paste any suspicious SMS, email, or social media message.
+
+ScamRadar evaluates:
+
+* Scam keywords
+* Urgency indicators
+* Financial requests
+* Social engineering patterns
+
+and generates a risk assessment report.
 
 ---
 
-## 👥 Team Roles & Contributions
+### 🔗 URL Scanner
 
-A parallel 8-hour strategy divides modular responsibilities to ensure independent progression:
+Analyze suspicious links before opening them.
 
-*   **Deekshitha (Backend Dev):** Setup of the backend, Message Analysis API ([detector.py], risk scoring algorithms, and keyword rule index database mapping.
-*   **Karthikeya (OCR & URL Specialist):** Phishing URL reputation scanning, IP & Shortlink tracking filters, Pillow-based image OCR parsing, and visual marker analyses.
-*   **Ananya (Frontend Developer):** Interface development of the React SPA dashboard, tab navigation, state management, form validation, and real-time API integrations.
-*   **Afifa (Deployment & Lead):** Devops pipelines (Vercel/Render), automated webhook workflows (n8n), pitch deck, and mock judging presentations.
+The scanner checks for:
+
+* Phishing indicators
+* Suspicious domains
+* URL shorteners
+* Malicious patterns
+* High-risk website structures
+
+---
+
+### 🖼️ Screenshot Analysis
+
+Upload screenshots of messages or emails.
+
+ScamRadar:
+
+1. Extracts text using OCR
+2. Processes the extracted content
+3. Generates a scam risk report
+
+This is especially useful for WhatsApp, Telegram, and social media scams.
+
+---
+
+### ⚠️ Explainable Risk Scoring
+
+Instead of simply marking content as "Safe" or "Dangerous", ScamRadar explains the indicators that contributed to the risk score.
+
+Example:
+
+Risk Score: 87/100
+
+Reasons:
+
+* Urgency phrase detected
+* Suspicious financial request
+* Phishing URL detected
+
+---
+
+## How It Works
+
+User Input
+↓
+Message / URL / Screenshot Analysis
+↓
+Threat Detection Engine
+↓
+Risk Evaluation
+↓
+Detailed Security Report
+
+---
+
+## Tech Stack
+
+### Frontend
+
+* React 19
+* TypeScript
+* Vite
+* Tailwind CSS
+* Lucide React
+
+### Backend
+
+* Node.js
+* Express
+* TypeScript
+
+### AI & Detection
+
+* Google Gemini API
+* Custom Risk Analysis Engine
+* Rule-Based Threat Detection
+
+### OCR
+
+* FastAPI
+* EasyOCR
+* Pillow
+
+### Automation & Deployment
+
+* GitHub
+
+---
+
+## Future Roadmap
+
+* Browser extension for phishing detection
+* Real-time WhatsApp integration
+* Multilingual scam detection
+* Machine Learning threat models
+* Community scam intelligence database
+
+---
+
+## Team
+
+Built during a rapid hackathon sprint by:
+
+* Deekshitha — Backend & Threat Detection
+* Karthikeya — URL Security & OCR
+* Ananya — Frontend Development
+* Afifa — Deployment, Automation & Presentation
+
+---
+
+### Our Mission
+
+To make digital safety accessible to everyone by helping users identify scams before they click, share, pay, or become victims.
