@@ -1,0 +1,8 @@
+{
+  "name": "Remix: ScamRadar",
+  "description": "Unified platform detecting scam messages, phishing URLs, and screenshot scams in parallel using advanced AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

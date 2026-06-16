@@ -1,0 +1,295 @@
+[{"_1":2,"_3":-5,"_4":-5},"loaderData",{"_5":6,"_7":8},"actionData","errors","root",{"_125":126,"_127":60,"_128":15,"_129":15,"_130":15,"_131":15,"_132":15,"_133":15,"_134":135},"routes/s.$postId",{"_9":10,"_11":12,"_13":-7,"_14":15,"_16":15,"_17":18},"kind","post_with_profile","postWithProfile",{"_19":20,"_21":22},"referrer","preferIntrinsicAspectRatioForOgImage",false,"enforceRenderedOgImg","defaultOgDescription","ChatGPT helps you get answers, find inspiration, and be more productive.","post",{"_41":42,"_43":44,"_45":46,"_47":48,"_49":50,"_51":52,"_53":54,"_34":55,"_56":57,"_58":15},"profile",{"_23":24,"_25":24,"_26":27,"_28":-5,"_29":-5,"_30":31,"_32":15,"_33":-5,"_34":-5,"_35":-5,"_36":15,"_37":-5,"_38":-5,"_39":-5,"_40":15},"user_id","anonymous","username","profile_picture_url","https://cdn.openai.com/sora/images/profile_placeholder_v4.png","profile_picture_id","is_default_profile_picture","follower_count",0,"is_following","display_name","permalink","can_cameo","verified","character_count","owner_profile","social_context","follows_you","id","t_6a2f95576df08191980eee333a248aad","posted_at",1781503319.429534,"text","Cybersecurity Hackathon Topic","og_title","Check out this chat","og_description","Here's a chat someone thought you'd want to see.","attachments",[66],"preview_image_url","https://ogimg.chatgpt.com/?postId=t_6a2f95576df08191980eee333a248aad","https://chatgpt.com/s/t_6a2f95576df08191980eee333a248aad","permissions",{"_59":60,"_61":15,"_62":15,"_63":60,"_64":65},"use_experimental_unfurl","can_read",true,"can_write","can_delete","can_remix","share_setting","public",{"_41":67,"_68":69,"_9":70,"_71":72,"_73":-5},"t_6a2f95576df08191980eee333a248aad-attachment-0","tags",[],"message_slice","messages",[74],"group_chat_id",{"_41":75,"_76":77,"_78":79,"_80":-5,"_81":82,"_83":84,"_85":60,"_86":87,"_88":89,"_90":91,"_92":93},"4d2861dd-e0c9-4141-a18c-7932024d95b0","author",{"_121":122,"_123":-5,"_88":124},"create_time",1781503154.241053,"update_time","content",{"_117":45,"_118":119},"status","finished_successfully","end_turn","weight",1,"metadata",{"_94":95,"_96":97,"_98":99,"_100":101,"_102":103,"_104":105,"_106":107,"_108":109,"_110":109,"_111":101,"_112":113,"_114":60,"_115":116},"recipient","all","channel","final","citations",[],"content_references",[],"story_events",[],"resolved_model_slug","gpt-5-5","search_result_groups",[],"request_id","9d8fa756-8566-4d79-aac2-fe56be5ddb63","message_type","next","turn_exchange_id","755918e0-fd10-45ac-b001-2a25c4be9bb1","working_turn_id","model_slug","default_model_slug","auto","can_save","parent_id","bbb21b21-0d90-4d10-a20c-3da8e0090c40","content_type","parts",[120],"Absolutely! Since you have **4 team members** and only **8–10 hours**, the best strategy is to work **in parallel**. Here's how I would divide the work for **ScamShield AI**.\
+\
+# 🚀 Team Structure for ScamShield AI\
+\
+## 👨‍💻 Person 1: Backend Developer (API \u0026 Message Detection)\
+\
+### Responsibilities:\
+- Set up FastAPI backend\
+- Implement `/analyze` endpoint\
+- Build message scam detection logic\
+- Create risk scoring system\
+- Test APIs using Swagger\
+\
+### Tasks:\
+- Create `main.py`\
+- Create `detector.py`\
+- Implement:\
+  - Keyword detection\
+  - URL extraction from messages\
+  - Scam categorization\
+\
+### Deliverables:\
+```text\
+POST /analyze\
+\
+Input:\
+{\
+  \"text\": \"message\"\
+}\
+\
+Output:\
+{\
+  \"risk_score\": 85,\
+  \"category\": \"High Risk Scam\",\
+  \"reasons\": [...]\
+}\
+```\
+\
+### Estimated Time:\
+⏰ 2–3 hours\
+\
+---\
+\
+# 👩‍💻 Person 2: URL Scanner \u0026 OCR Specialist\
+\
+### Responsibilities:\
+- Build URL-only analysis\
+- Add screenshot upload feature (if time permits)\
+\
+### Tasks:\
+\
+Implement:\
+\
+```text\
+POST /analyze-url\
+```\
+\
+Features:\
+\
+✅ Suspicious TLD detection\
+\
+✅ URL shortener detection\
+\
+✅ IP-based URL detection\
+\
+✅ Suspicious keyword detection\
+\
+### Bonus Task:\
+\
+Screenshot Analysis:\
+\
+Install:\
+\
+```bash\
+pip install easyocr pillow\
+```\
+\
+Flow:\
+\
+```text\
+Screenshot\
+↓\
+OCR\
+↓\
+Extract Text\
+↓\
+Analyze Message API\
+```\
+\
+### Deliverables:\
+\
+```text\
+POST /analyze-url\
+\
+POST /analyze-image\
+```\
+\
+### Estimated Time:\
+⏰ 2–3 hours\
+\
+---\
+\
+# 🎨 Person 3: Frontend Developer (React UI)\
+\
+### Responsibilities:\
+Build the complete user interface.\
+\
+### Screens:\
+\
+## 1. Message Scanner\
+\
+```text\
+Paste suspicious message\
+↓\
+Analyze\
+↓\
+Results\
+```\
+\
+---\
+\
+## 2. URL Scanner\
+\
+```text\
+Enter URL\
+↓\
+Scan URL\
+↓\
+Results\
+```\
+\
+---\
+\
+## 3. Screenshot Upload (Optional)\
+\
+```text\
+Upload Image\
+↓\
+Scan Screenshot\
+↓\
+Results\
+```\
+\
+### Tasks:\
+\
+- Build React app\
+- Connect APIs using Axios\
+- Display:\
+  - Risk Score\
+  - Scam Category\
+  - Reasons\
+\
+### Deliverables:\
+\
+Beautiful dashboard containing:\
+\
+```text\
+ScamShield AI\
+----------------\
+\
+[ Message Input ]\
+\
+[ URL Input ]\
+\
+Risk Score: 90%\
+\
+Indicators:\
+✓ Urgency\
+✓ Suspicious URL\
+```\
+\
+### Estimated Time:\
+⏰ 3–4 hours\
+\
+---\
+\
+# ☁️ Person 4: DevOps, Deployment \u0026 Presentation Lead\
+\
+### Responsibilities:\
+\
+## Deployment\
+\
+Deploy backend to Render.\
+\
+Use credits for:\
+\
+```text\
+FastAPI Backend\
+```\
+\
+Deploy frontend using:\
+\
+- Vercel OR\
+- Netlify\
+\
+---\
+\
+## n8n Workflow\
+\
+Build automation:\
+\
+```text\
+User submits message\
+↓\
+ScamShield API\
+↓\
+High Risk?\
+↓\
+Send Email Alert\
+```\
+\
+---\
+\
+## Presentation\
+\
+Prepare:\
+\
+### Architecture Diagram\
+\
+```text\
+React Frontend\
+       ↓\
+FastAPI Backend\
+       ↓\
+Scam Engine\
+       ↓\
+Render Deployment\
+```\
+\
+---\
+\
+### Pitch Deck\
+\
+Slides:\
+\
+1. Problem Statement\
+2. Solution\
+3. Features\
+4. Architecture\
+5. Demo\
+6. Future Scope\
+\
+---\
+\
+### Demo Preparation\
+\
+Test:\
+\
+- Safe message\
+- Phishing message\
+- Malicious URL\
+\
+### Estimated Time:\
+⏰ 2–3 hours\
+\
+---\
+\
+# 🕒 Suggested Timeline\
+\
+| Time | Person 1 | Person 2 | Person 3 | Person 4 |\
+|--------|-----------|-----------|-----------|-----------|\
+| Hour 1 | Backend Setup | URL Scanner Setup | React Setup | Architecture Slides |\
+| Hour 2 | Message Detection | URL Analysis | UI Development | Render Deployment |\
+| Hour 3 | API Testing | OCR Feature | API Integration | n8n Workflow |\
+| Hour 4 | Bug Fixes | Bug Fixes | Results Dashboard | Pitch Deck |\
+| Hour 5–6 | Integration Testing (Everyone) |\
+| Hour 7 | Full Demo Practice |\
+| Hour 8 | Final Submission |\
+\
+---\
+\
+# Final Deliverables for Judges\
+\
+✅ Message Scam Detection\
+\
+✅ URL Scanner\
+\
+✅ Screenshot Scam Detection (Bonus)\
+\
+✅ Live Deployed Application\
+\
+✅ n8n Alert Automation\
+\
+✅ Professional Presentation\
+\
+---\
+\
+# Team Lead Recommendation\
+\
+Since you originally came up with the idea, **you should take Person 4's role (Presentation + Integration + Deployment)** because:\
+- You'll understand the complete project flow.\
+- You'll be best positioned to answer judges' questions.\
+- You can coordinate the team while others code.\
+\
+This division should allow all **4 people to finish a polished MVP within the hackathon timeframe.**","role","assistant","name",{},"dd",{"_136":137,"_138":139},"disablePrefetch","shouldPrefetchAccount","shouldPrefetchUser","shouldPrefetchSystemHints","promoteCss","disableSSR","stripModulepreloadImports","statsigGateEvaluationsPromise",["P",135],"traceId","2007358671458877908","traceTime",1781503833605]
